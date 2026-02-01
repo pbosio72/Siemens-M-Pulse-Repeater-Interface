@@ -53,14 +53,15 @@ KEYPAD LAYOUT:
   *  0  #
 
 KEYPAD PIN MAPPING (tested configuration):
+// Pin out inverted for montability reasons
 Physical Pin → PCF8574 Pin → Function
-Pin 1        → P0          → Column 2 (2, 5, 8, 0)
-Pin 2        → P1          → Row 1 (1, 2, 3)
-Pin 3        → P2          → Column 1 (1, 4, 7, *)
+Pin 1        → P6          → Column 2 (2, 5, 8, 0)
+Pin 2        → P5          → Row 1 (1, 2, 3)
+Pin 3        → P4          → Column 1 (1, 4, 7, *)
 Pin 4        → P3          → Row 4 (*, 0, #)
-Pin 5        → P4          → Column 3 (3, 6, 9, #)
-Pin 6        → P5          → Row 3 (7, 8, 9)
-Pin 7        → P6          → Row 2 (4, 5, 6)
+Pin 5        → P2          → Column 3 (3, 6, 9, #)
+Pin 6        → P1          → Row 3 (7, 8, 9)
+Pin 7        → P0          → Row 2 (4, 5, 6)
 
 FUNCTIONS:
 - Keys 0-9: Input numbers (max 15 digits), each digit is immediately written to memory
@@ -121,11 +122,12 @@ char keys[ROWS][COLS] = {
   {'*', '0', '#'}
 };
 
+// Pin out inverted for montability reasons
 // PCF8574 pin assignments (based on physical testing)
 // Rows control which horizontal line is active
-byte rowPins[ROWS] = {1, 6, 5, 3}; // P1, P6, P5, P3
+byte rowPins[ROWS] = {5, 0, 1, 3}; // P5, P0, P1, P3
 // Columns detect which vertical line is pressed
-byte colPins[COLS] = {2, 0, 4};    // P2, P0, P4
+byte colPins[COLS] = {4, 6, 2};    // P4, P6, P2
 
 // ************************* KEYPAD FUNCTIONS *************************
 

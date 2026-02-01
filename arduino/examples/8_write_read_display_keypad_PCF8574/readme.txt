@@ -175,13 +175,14 @@ I2C DEVICES:
   PCF8574:  Address 0x20, connected to SDA/SCL
 
 3X4 KEYPAD → PCF8574:
-  Physical Pin 1 → P0 (Column 2: keys 2, 5, 8, 0)
-  Physical Pin 2 → P1 (Row 1: keys 1, 2, 3)
-  Physical Pin 3 → P2 (Column 1: keys 1, 4, 7, *)
+Pin out inverted for montability reason
+  Physical Pin 1 → P6 (Column 2: keys 2, 5, 8, 0)
+  Physical Pin 2 → P5 (Row 1: keys 1, 2, 3)
+  Physical Pin 3 → P4 (Column 1: keys 1, 4, 7, *)
   Physical Pin 4 → P3 (Row 4: keys *, 0, #)
-  Physical Pin 5 → P4 (Column 3: keys 3, 6, 9, #)
-  Physical Pin 6 → P5 (Row 3: keys 7, 8, 9)
-  Physical Pin 7 → P6 (Row 2: keys 4, 5, 6)
+  Physical Pin 5 → P2 (Column 3: keys 3, 6, 9, #)
+  Physical Pin 6 → P1 (Row 3: keys 7, 8, 9)
+  Physical Pin 7 → P0 (Row 2: keys 4, 5, 6)
 
 KEYPAD MATRIX:
        C1(P2)  C2(P0)  C3(P4)
