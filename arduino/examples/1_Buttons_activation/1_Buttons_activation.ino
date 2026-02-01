@@ -4,6 +4,27 @@ Input on pins 3, 4, and 5
 Output on pins 10, 11, and 12
 */
 
+/*
+48V POWER SUPPLY
+
+IMPORTANT: for safety reason read the related readme.txt file
+
+DISCLAIMER:
+The author(s) of this project DISCLAIM ALL RESPONSIBILITY and LIABILITY
+for any injury, death, property damage, or other consequences resulting
+from the construction, modification, or use of this system.
+
+By building or using this project, you acknowledge that:
+- You understand the risks involved with high voltage systems
+- You have the necessary skills and knowledge to work safely
+- You accept full responsibility for your safety and others
+- You will comply with all local electrical codes and regulations
+- You use this information entirely at your own risk
+
+IF YOU ARE NOT QUALIFIED TO WORK WITH HIGH VOLTAGE SYSTEMS,
+DO NOT ATTEMPT TO BUILD THIS PROJECT.
+*/
+
 // Input button pins
 const int button_1 = 3; // Button 1
 const int button_2 = 4; // Button 2
